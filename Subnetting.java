@@ -123,6 +123,7 @@ public class Subnetting {
         String classAdefSub = "255.0.0.0";
         String classBdefSub = "255.255.0.0";
         String classCdefSub = "255.255.255.0";
+        while(true){
         System.out.println("Enter Your Smaple ip address: ");
        
         Scanner input = new Scanner(System.in);
@@ -158,6 +159,15 @@ public class Subnetting {
         int bits = bitsRequired(subnets);
         System.out.println("Number of bits required: "+bits);
         subnetsIP(ip, cls, bits, subnets);
+           
+           Scanner ipt = new Scanner(System.in);
+        String choice = ipt.nextLine();
+        if(choice.equals("y") || choice.equals("Y"))
+            continue;
+        else{
+            break;
+        }
 
+    }
     }
 }
