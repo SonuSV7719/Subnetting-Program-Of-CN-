@@ -160,7 +160,8 @@ public class Subnetting {
         System.out.println("Number of bits required: "+bits);
         subnetsIP(ip, cls, bits, subnets);
            
-           Scanner ipt = new Scanner(System.in);
+        System.out.println("Do you want to continue enter 'y' to continue: ");
+        Scanner ipt = new Scanner(System.in);
         String choice = ipt.nextLine();
         if(choice.equals("y") || choice.equals("Y"))
             continue;
