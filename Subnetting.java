@@ -135,7 +135,7 @@ public class Subnetting {
         String[] splitedIP = ip.split("[.]");
         String ipRan = ipRange(ip); 
         String cls = classFinder(ipRan);
-        String threeBit = "255"+"."+ " 255" +"."+"255"+".";
+        String threeBit = "255"+"."+ "255" +"."+"255"+".";
         String twoBits = "255"+"."+ "255"+"."+(int)subnetMask(bitsRequired(subnets));
         String oneBits = "255"+ "." + (int)subnetMask(bitsRequired(subnets)) + "." + "0" + "." + "0";
 
